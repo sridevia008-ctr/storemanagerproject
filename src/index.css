@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: #1f2937; /* Tailwind's gray-800 */
+}
+
+/* ✅ Dark mode override */
+.dark body {
+  background-color: #0f172a; /* Tailwind's slate-900 or your custom midnight */
+  color: #f5e1ff;            /* Your blossom or light text color */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* ✅ Optional: dark mode for code blocks */
+.dark code {
+  color: #93c5fd; /* Tailwind's blue-300 or your starlight */
+}

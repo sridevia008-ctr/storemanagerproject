@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* ✅ Dark mode override */
+.dark .App-header {
+  background-color: #0f172a; /* Tailwind's slate-900 or your custom midnight */
+  color: #f5e1ff;            /* Your blossom or light text color */
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* ✅ Dark mode override */
+.dark .App-link {
+  color: #a5b4fc; /* Tailwind's indigo-300 or your starlight */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
